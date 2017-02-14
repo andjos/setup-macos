@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 #Set PATHs
 echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
