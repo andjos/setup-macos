@@ -4,7 +4,7 @@
 sudo -v
 
 #Install applications etc...
-./brew.sh
+source brew.sh
 
 #Install zsh shell
 brew install zsh
