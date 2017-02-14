@@ -3,11 +3,6 @@
 #Install applications etc...
 ./brew.sh
 
-# Symlink dot-files
-for file in .*; do
-	[ -r "$file" ] && [ -f "$file" ] && ln -fs "$(pwd {BASH_SOURCE[0]})/$file" ~/$file;
-done
-
 #Install zsh shell
 brew install zsh
 brew install zsh-completions
@@ -18,6 +13,13 @@ if ! fgrep -q '/usr/local/bin/zsh' /etc/shells; then
   echo '/usr/local/bin/zsh' | sudo tee -a /etc/shells;
   chsh -s /usr/local/bin/zsh;
 fi;
+
+# Symlink dot-files
+for file in .*; do
+	[ -r "$file" ] && [ -f "$file" ] && ln -fs "$(pwd {BASH_SOURCE[0]})/$file" ~/$file;
+done
+
+
 
 #GIT config...
 #git config --global user.name "Your Name Here"
