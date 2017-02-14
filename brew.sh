@@ -16,6 +16,7 @@ brew install terraform
 brew install terragrunt
 brew install packer
 brew install awscli
+brew install lastpass-cli
 brew cask install iterm2-beta
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
@@ -27,9 +28,9 @@ brew cask install atom
 
 #Nice to have...
 brew cask install spotify
-brew install lastpass-cli
 brew cask install laspass
 brew cask install google-chrome
+brew cask install citrix-receiver
 brew cask install dropbox
 brew cask install google-drive
 brew cask install microsoft-office
