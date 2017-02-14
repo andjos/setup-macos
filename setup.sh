@@ -20,3 +20,5 @@ echo 'export CLICOLOR=1' >> ~/.bash_profile
 for file in .*; do
 	[ -r "$file" ] && [ -f "$file" ] && ln -fs "$(pwd {BASH_SOURCE[0]})/$file" ~/$file;
 done
+
+# sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
