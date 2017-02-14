@@ -1,7 +1,11 @@
 #!/bin/bash
 
 #
-sudo -v
+#sudo -v
+
+#Install brew command...
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 
 #Install applications etc...
 source brew.sh

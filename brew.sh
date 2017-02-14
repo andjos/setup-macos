@@ -1,8 +1,5 @@
 #!/bin/bash
 
-#Install brew command...
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 #Update, upgrade brew...
 brew update
 brew tap caskroom/versions
