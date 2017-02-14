@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#
+sudo -v
+
 #Install applications etc...
 ./brew.sh
 
