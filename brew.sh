@@ -17,7 +17,6 @@ brew install terragrunt
 brew install packer
 brew install awscli
 brew install lastpass-cli
-brew cask install iterm2-beta
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 brew cask install vagrant
@@ -25,10 +24,11 @@ brew cask install vagrant-manager
 brew cask install docker
 brew cask install iterm2-beta
 brew cask install atom
+brew cask install iterm2-beta
 
 #Nice to have...
 brew cask install spotify
-brew cask install laspass
+brew cask install lastpass
 brew cask install google-chrome
 brew cask install citrix-receiver
 brew cask install dropbox
