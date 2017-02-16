@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-#sudo -v
+sudo -v
 
 #Install brew command...
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -12,7 +12,7 @@ source brew.sh
 
 #Install zsh shell
 brew install zsh
-brew install zsh-completions
+brew install zsh-completions zsh-syntax-highlighting
 brew install zsh-syntax-highlighting
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 # Switch to using brew-installed zsh as default shell
@@ -28,11 +28,18 @@ done
 
 
 
-#GIT config...
-#git config --global user.name "Your Name Here"
-#git config --global user.email "your_email@youremail.com"
-#git config --global credential.helper osxkeychain
+#Post config of git
+echo "GIT name:"
+read gitname
+echo "GIT email:"
+read gitemail
+git config --global user.name $gitname
+git config --global user.email $gitemail
+git config --global credential.helper osxkeychain
+git config --global core.excludesfile ~/.gitignore_global
 
+
+echo "Done....."
 
 
 
