@@ -4,6 +4,12 @@
 brew update
 brew upgrade
 
+# brew taps
+brew tap caskroom/versions
+brew tap caskroom/fonts
+brew tap homebrew/games
+
+
 #Install DevOps tools...
 brew install git
 brew install git-lfs
@@ -17,9 +23,8 @@ brew cask install virtualbox-extension-pack
 brew cask install vagrant
 brew cask install vagrant-manager
 brew cask install docker
-brew cask install iterm2-beta
+brew cask install iterm2
 brew cask install atom
-brew cask install iterm2-beta
 brew cask install sourcetree
 
 #Nice to have...
