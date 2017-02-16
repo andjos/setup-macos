@@ -76,7 +76,7 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 # Save screenshots to the desktop
 defaults write com.apple.screencapture location -string "${HOME}/Desktop"
 
-# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
+# Save screenshots in JPG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "JPG"
 
 ###############################################################################
@@ -181,7 +181,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
   # Remove the auto-hiding Dock delay
   defaults write com.apple.dock autohide-delay -float 0
   # Remove the animation when hiding/showing the Dock
-  defaults write com.apple.dock autohide-time-modifier -float 0
+  #defaults write com.apple.dock autohide-time-modifier -float 0
 
   # Automatically hide and show the Dock
   defaults write com.apple.dock autohide -bool true
