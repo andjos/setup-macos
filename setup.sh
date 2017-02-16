@@ -1,11 +1,9 @@
 #!/bin/bash
 
-#
 sudo -v
 
 #Install brew command...
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 
 #Install applications etc...
 source brew.sh
@@ -26,8 +24,6 @@ for file in .*; do
 	[ -r "$file" ] && [ -f "$file" ] && ln -fs "$(pwd {BASH_SOURCE[0]})/$file" ~/$file;
 done
 
-
-
 #Post config of git
 echo "GIT name:"
 read gitname
@@ -38,13 +34,7 @@ git config --global user.email $gitemail
 git config --global credential.helper osxkeychain
 git config --global core.excludesfile ~/.gitignore_global
 
+#Config OS...
+source os.sh
 
 echo "Done....."
-
-
-
-# sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-## CTRL arrow naviation
-#bindkey '^[[1;5D' backward-word
-#bindkey '^[[1;5C' forward-word
-#
