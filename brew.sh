@@ -38,6 +38,7 @@ brew cask install microsoft-office
 brew cask install the-unarchiver
 brew cask install whatsapp
 brew cask install font-source-code-pro
+brew cask install spectacle
 
 
 #Communication tools...
@@ -45,15 +46,15 @@ brew cask install slack
 brew cask install skype-for-business
 
 #Install Appstore Apps...
-#brew install mas
+brew install mas
 #Microsoft RDP
-#mas install 715768417
+mas install 715768417
 #Lightshot
-#mas install 526298438
+mas install 526298438
 #keynote, Pages, Numbers
-#mas install 409183694
-#mas install 409201541
-#mas install 409203825
+mas install 409183694
+mas install 409201541
+mas install 409203825
 
 
 #Not brew but we need to add Atom plug-ins...
