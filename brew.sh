@@ -26,6 +26,8 @@ brew cask install docker
 brew cask install iterm2
 brew cask install atom
 brew cask install sourcetree
+brew install python3
+brew cask install pycharm-ce
 
 #Nice to have...
 brew cask install spotify

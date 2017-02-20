@@ -9,14 +9,11 @@ sudo -v
 source brew.sh
 
 #Install zsh shell
-#brew install zsh zsh-completions zsh-syntax-highlighting
-#curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+brew install zsh zsh-completions zsh-syntax-highlighting
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
 # Switch to using brew-installed zsh as default shell
-if ! fgrep -q '/usr/local/bin/zsh' /etc/shells; then
-  echo '/usr/local/bin/zsh' | sudo tee -a /etc/shells;
-  chsh -s /usr/local/bin/zsh;
-fi;
+chsh -s $(which zsh)
 
 # Symlink dot-files
 for file in .*; do
