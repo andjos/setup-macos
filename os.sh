@@ -35,17 +35,17 @@ sudo systemsetup -setrestartfreeze on
 ###############################################################################
 
 # Disable hibernation (speeds up entering sleep mode)
-sudo pmset -a hibernatemode 0
+#sudo pmset -a hibernatemode 0
 
 # Remove the sleep image file to save disk space
-sudo rm /private/var/vm/sleepimage
+#sudo rm /private/var/vm/sleepimage
 # Create a zero-byte file instead…
-sudo touch /private/var/vm/sleepimage
+#sudo touch /private/var/vm/sleepimage
 # …and make sure it can’t be rewritten
-sudo chflags uchg /private/var/vm/sleepimage
+#sudo chflags uchg /private/var/vm/sleepimage
 
 # Disable the sudden motion sensor as it’s not useful for SSDs
-sudo pmset -a sms 0
+#sudo pmset -a sms 0
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -184,7 +184,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
   #defaults write com.apple.dock autohide-time-modifier -float 0
 
   # Automatically hide and show the Dock
-  #defaults write com.apple.dock autohide -bool true
+  defaults write com.apple.dock autohide -bool true
 
   # Make Dock icons of hidden applications translucent
   defaults write com.apple.dock showhidden -bool true
