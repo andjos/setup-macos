@@ -1,0 +1,7 @@
+set number
+set lines=35 columns=150
+set colorcolumn=90
+filetype on
+syntax on
+colorscheme Solarized
+set guifont=Source\ Code\ Pro\ Light\ 14
