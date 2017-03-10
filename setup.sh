@@ -20,6 +20,13 @@ for file in .*; do
 	[ -r "$file" ] && [ -f "$file" ] && ln -fs "$(pwd {BASH_SOURCE[0]})/$file" ~/$file;
 done
 
+#Link Atom files
+ln -fs $("pwd")/atom/config.cson ~/.atom/config.cson
+ln -fs $("pwd")/atom/init.coffee ~/.atom/init.coffee
+ln -fs $("pwd")/atom/keymap.cson ~/.atom/keymap.cson
+ln -fs $("pwd")/atom/snippets.cson ~/.atom/snippets.cson
+ln -fs $("pwd")/atom/styles.less ~/.atom/styles.less
+
 #Post config of git
 echo "GIT name:"
 read gitname

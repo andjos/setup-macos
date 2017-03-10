@@ -38,15 +38,18 @@ brew cask install dropbox
 brew cask install google-drive
 brew cask install microsoft-office
 brew cask install the-unarchiver
-brew cask install whatsapp
+#brew cask install whatsapp
+#nice code font
 brew cask install font-source-code-pro
+#resize windows
 brew cask install spectacle
-
-
+#iso2usb creator
+brew cask install etcher
 #Communication tools...
 brew cask install slack
 brew cask install skype-for-business
-
+brew cask install franz
+beww cask install whatsapp
 #Install Appstore Apps...
 brew install mas
 #Microsoft RDP
@@ -62,6 +65,14 @@ mas install 409203825
 #Not brew but we need to add Atom plug-ins...
 apm install language-terraform
 apm install language-docker
+apm install script
+apm install platformio-ide-terminal
+
+#Python linter in Atom
+apm install linter
+pip install flake8
+pip install flake8-docstrings
+apm install linter-flake8
 
 #End, clean up...
 brew cleanup

@@ -6,6 +6,9 @@ osascript -e 'tell application "System Preferences" to quit'
 # Ask for the administrator password upfront
 sudo -v
 
+#Set login Messages
+#defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "In case of loss, call 555-555-5555."
+
 # Always show scrollbars
 defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 
@@ -143,6 +146,9 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 	General -bool true \
 	OpenWith -bool true \
 	Privileges -bool true
+
+	# Add quit function to finder
+	defaults write com.apple.finder QuitMenuItem -bool true
 
   ###############################################################################
   # Dock, Dashboard, and hot corners                                            #
