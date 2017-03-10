@@ -49,7 +49,7 @@ brew cask install etcher
 brew cask install slack
 brew cask install skype-for-business
 brew cask install franz
-beww cask install whatsapp
+brew cask install whatsapp
 #Install Appstore Apps...
 brew install mas
 #Microsoft RDP
@@ -70,8 +70,8 @@ apm install platformio-ide-terminal
 
 #Python linter in Atom
 apm install linter
-pip install flake8
-pip install flake8-docstrings
+pip3 install flake8
+pip3 install flake8-docstrings
 apm install linter-flake8
 
 #End, clean up...
