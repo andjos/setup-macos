@@ -16,6 +16,7 @@ brew install git-lfs
 brew install terraform
 brew install terragrunt
 brew install python3
+brew install micropython
 brew install packer
 brew install awscli
 brew install lastpass-cli
