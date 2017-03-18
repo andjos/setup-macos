@@ -2,8 +2,10 @@
 
 sudo -v
 
-#Install brew command...
+#Install brew command... if needed...
+if ! [ -x "$(command -v brew)" ]; then
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 
 #Install applications etc...
 source brew.sh
@@ -27,6 +29,9 @@ ln -fs $("pwd")/atom/keymap.cson ~/.atom/keymap.cson
 ln -fs $("pwd")/atom/snippets.cson ~/.atom/snippets.cson
 ln -fs $("pwd")/atom/styles.less ~/.atom/styles.less
 
+#Config OS...
+source os.sh
+
 #Post config of git
 echo "GIT name:"
 read gitname
@@ -36,8 +41,5 @@ git config --global user.name $gitname
 git config --global user.email $gitemail
 git config --global credential.helper osxkeychain
 git config --global core.excludesfile ~/.gitignore_global
-
-#Config OS...
-source os.sh
 
 echo "Done....."

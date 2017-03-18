@@ -9,6 +9,8 @@
     tabLength: 4
   "exception-reporting":
     userId: "c9ccb34a-7d50-e9b3-7f63-0ed5c092aed0"
+  "linter-ui-default":
+    showPanel: true
   "platformio-ide-terminal":
     style:
       theme: "solarized-dark"

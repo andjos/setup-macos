@@ -15,6 +15,6 @@ SAVEHIST=1000000
 HISTSIZE=1000000
 setopt SHARE_HISTORY
 
-plugins=(git)
+plugins=(git docker brew)
 
 source $ZSH/oh-my-zsh.sh
