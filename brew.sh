@@ -34,6 +34,7 @@ brew install coreutils
 #Nice to have...
 brew cask install spotify
 brew cask install google-chrome
+brew install Caskroom/cask/firefox
 brew cask install citrix-receiver
 brew cask install dropbox
 brew cask install google-drive
