@@ -30,6 +30,8 @@ brew cask install iterm2
 brew cask install atom
 brew cask install font-source-code-pro
 brew install coreutils
+brew cask install ngrok
+brew install jq
 
 #Nice to have...
 brew cask install spotify
@@ -41,6 +43,7 @@ brew cask install google-drive
 brew cask install microsoft-office
 brew cask install the-unarchiver
 brew cask install spectacle
+brew install Caskroom/cask/tunnelblick
 
 #iso2usb creator
 brew cask install etcher
