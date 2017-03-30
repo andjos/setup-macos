@@ -32,6 +32,8 @@ brew cask install font-source-code-pro
 brew install coreutils
 brew cask install ngrok
 brew install jq
+brew install ctop
+brew install wget
 
 #Nice to have...
 brew cask install spotify

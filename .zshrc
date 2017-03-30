@@ -18,3 +18,5 @@ setopt SHARE_HISTORY
 plugins=(git docker brew)
 
 source $ZSH/oh-my-zsh.sh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
