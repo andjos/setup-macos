@@ -67,7 +67,7 @@ apm install linter
 pip3 install flake8
 pip3 install flake8-docstrings
 apm install linter-flake8
-pi3 install virtualenv
+pip3 install virtualenv
 
 #Install Appstore Apps...
 brew install mas
