@@ -34,6 +34,7 @@ brew cask install ngrok
 brew install jq
 brew install ctop
 brew install wget
+brew install Caskroom/cask/postman
 
 #Nice to have...
 brew cask install spotify
