@@ -35,6 +35,11 @@ brew install jq
 brew install ctop
 brew install wget
 brew install Caskroom/cask/postman
+brew install Caskroom/cask/keka
+brew install kops
+brew install kubectl
+
+
 
 #Nice to have...
 brew cask install spotify

@@ -15,7 +15,7 @@ SAVEHIST=1000000
 HISTSIZE=1000000
 setopt SHARE_HISTORY
 
-plugins=(git docker brew)
+plugins=(git docker brew kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
