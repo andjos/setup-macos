@@ -3,10 +3,12 @@
   core:
     disabledPackages: [
       "linter"
+      "platformio-ide-terminal"
     ]
     telemetryConsent: "no"
   editor:
     fontFamily: "source code pro"
+    fontSize: 13
     invisibles: {}
     preferredLineLength: 160
     showIndentGuide: true
@@ -16,8 +18,7 @@
     userId: "c9ccb34a-7d50-e9b3-7f63-0ed5c092aed0"
   kite:
     showKiteTourOnStatup: false
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   "platformio-ide-terminal":
     style:
       theme: "solarized-dark"

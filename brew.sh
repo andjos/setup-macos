@@ -36,9 +36,12 @@ brew install ctop
 brew install wget
 brew install Caskroom/cask/postman
 brew install Caskroom/cask/keka
+
+#Some Kubernetes tweeks
 brew install kops
 brew install kubectl
-
+brew tap superbrothers/zsh-kubectl-prompt git://github.com/superbrothers/zsh-kubectl-prompt.git
+brew install zsh-kubectl-prompt
 
 
 #Nice to have...
