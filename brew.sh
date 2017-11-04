@@ -16,15 +16,16 @@ brew install git-lfs
 brew install terraform
 brew install terragrunt
 brew install python3
-brew install micropython
-brew install packer
+#brew install micropython
+#brew install packer
 brew install awscli
+brew cask install google-cloud-sdk
 brew install lastpass-cli
 brew cask install lastpass
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 brew cask install vagrant
-brew cask install vagrant-manager
+#brew cask install vagrant-manager
 brew cask install docker
 brew cask install iterm2
 brew cask install atom
@@ -32,7 +33,7 @@ brew cask install font-source-code-pro
 brew install coreutils
 brew cask install ngrok
 brew install jq
-brew install ctop
+#brew install ctop
 brew install wget
 brew install Caskroom/cask/postman
 brew install Caskroom/cask/keka
@@ -52,7 +53,7 @@ brew cask install citrix-receiver
 brew cask install dropbox
 brew cask install google-drive
 brew cask install microsoft-office
-brew cask install the-unarchiver
+#brew cask install the-unarchiver
 brew cask install spectacle
 brew install Caskroom/cask/tunnelblick
 
@@ -63,7 +64,7 @@ brew cask install etcher
 brew cask install slack
 brew cask install skype-for-business
 brew cask install franz
-brew install Caskroom/cask/screenhero
+#brew install Caskroom/cask/screenhero
 
 #Not brew but we need to add Atom plug-ins...
 apm install language-terraform
