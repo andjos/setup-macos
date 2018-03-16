@@ -37,6 +37,8 @@ brew install jq
 brew install wget
 brew install Caskroom/cask/postman
 brew install Caskroom/cask/keka
+brew cask install clipy
+brew cask install visual-studio-code
 
 #Some Kubernetes tweeks
 brew install kops
