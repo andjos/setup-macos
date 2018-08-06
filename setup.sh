@@ -23,14 +23,14 @@ for file in .*; do
 done
 
 #Link Atom files
-ln -fs $("pwd")/atom/config.cson ~/.atom/config.cson
-ln -fs $("pwd")/atom/init.coffee ~/.atom/init.coffee
-ln -fs $("pwd")/atom/keymap.cson ~/.atom/keymap.cson
-ln -fs $("pwd")/atom/snippets.cson ~/.atom/snippets.cson
-ln -fs $("pwd")/atom/styles.less ~/.atom/styles.less
+# ln -fs $("pwd")/atom/config.cson ~/.atom/config.cson
+# ln -fs $("pwd")/atom/init.coffee ~/.atom/init.coffee
+# ln -fs $("pwd")/atom/keymap.cson ~/.atom/keymap.cson
+# ln -fs $("pwd")/atom/snippets.cson ~/.atom/snippets.cson
+# ln -fs $("pwd")/atom/styles.less ~/.atom/styles.less
 
 #Config OS...
-source os.sh
+#source os.sh
 
 #Post config of git
 echo "GIT name:"
