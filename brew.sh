@@ -14,28 +14,28 @@ brew tap homebrew/games
 brew install git
 brew install git-lfs
 brew install terraform
-brew install terragrunt
+#brew install terragrunt
 brew install python3
 #brew install micropython
 #brew install packer
 brew install awscli
-brew cask install google-cloud-sdk
+#brew cask install google-cloud-sdk
 brew install lastpass-cli
 brew cask install lastpass
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
-brew cask install vagrant
+#brew cask install vagrant
 #brew cask install vagrant-manager
 brew cask install docker
 brew cask install iterm2
-brew cask install atom
+#brew cask install atom
 brew cask install font-source-code-pro
 brew install coreutils
-brew cask install ngrok
+#brew cask install ngrok
 brew install jq
 #brew install ctop
 brew install wget
-brew install Caskroom/cask/postman
+#brew install Caskroom/cask/postman
 brew install Caskroom/cask/keka
 brew cask install clipy
 brew cask install visual-studio-code
@@ -58,8 +58,6 @@ brew cask install microsoft-office
 #brew cask install the-unarchiver
 brew cask install spectacle
 brew install Caskroom/cask/tunnelblick
-
-#iso2usb creator
 brew cask install etcher
 
 #Communication tools...
@@ -69,17 +67,17 @@ brew cask install franz
 #brew install Caskroom/cask/screenhero
 
 #Not brew but we need to add Atom plug-ins...
-apm install language-terraform
-apm install language-docker
-apm install script
-apm install platformio-ide-terminal
+# apm install language-terraform
+# apm install language-docker
+# apm install script
+# apm install platformio-ide-terminal
 
 #Python linter in Atom
-apm install linter
-pip3 install flake8
-pip3 install flake8-docstrings
-apm install linter-flake8
-pip3 install virtualenv
+# apm install linter
+# pip3 install flake8
+# pip3 install flake8-docstrings
+# apm install linter-flake8
+# pip3 install virtualenv
 
 #Install Appstore Apps...
 brew install mas

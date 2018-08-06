@@ -2,6 +2,9 @@ for file in ~/.{paths,prompt,exports,aliases,functions,extra,auths}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done
 
+
+path+=($HOME/bin)
+
 # Fish-like syntax highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -16,7 +19,7 @@ SAVEHIST=1000000
 HISTSIZE=1000000
 setopt SHARE_HISTORY
 
-plugins=(git docker brew kubectl)
+plugins=(git docker brew kubectl go)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -27,3 +30,8 @@ autoload -U colors; colors
 source /usr/local/etc/zsh-kubectl-prompt/kubectl.zsh
 zstyle ':zsh-kubectl-prompt:' namespace false
 RPROMPT='%{$fg[blue]%}$ZSH_KUBECTL_PROMPT%{$reset_color%}'
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/Cellar/terraform/0.11.7/bin/terraform terraform
+
+command -v vg >/dev/null 2>&1 && eval "$(vg eval --shell zsh)"
