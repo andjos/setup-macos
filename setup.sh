@@ -29,6 +29,10 @@ done
 # ln -fs $("pwd")/atom/snippets.cson ~/.atom/snippets.cson
 # ln -fs $("pwd")/atom/styles.less ~/.atom/styles.less
 
+
+#Config Zsh
+git clone https://github.com/chmouel/oh-my-zsh-openshift ~/.oh-my-zsh/custom/plugins/oc
+
 #Config OS...
 #source os.sh
 
