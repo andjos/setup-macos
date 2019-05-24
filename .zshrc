@@ -23,7 +23,7 @@ SAVEHIST=1000000
 HISTSIZE=1000000
 setopt SHARE_HISTORY
 
-plugins=(git docker brew kubectl go oc)
+plugins=(oc git docker brew kubectl go)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -37,6 +37,21 @@ RPROMPT='%{$fg[blue]%}$ZSH_KUBECTL_PROMPT%{$reset_color%}'
 
 
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/Cellar/terraform/0.11.7/bin/terraform terraform
+complete -o nospace -C /usr/local/bin/terraform terraform
+
+typeset -U fpath  # Optinal for oh-my-zsh users
+fpath=(~/.zsh/oc $fpath)
+autoload -U compinit
+compinit -i
+
 
 command -v vg >/dev/null 2>&1 && eval "$(vg eval --shell zsh)"
+
+function kmerge() {
+  KUBECONFIG=~/.kube/config:$1 kubectl config view --flatten > ~/.kube/mergedkub && mv ~/.kube/mergedkub ~/.kube/config
+}
+
+function kbackup() {
+  echo Createing backup with name config_backup_$(date +'%Y-%M-%d')
+  cp $HOME/.kube/config $HOME/.kube/config_backup_$(date +'%Y-%M-%d')
+}
